@@ -10,30 +10,30 @@ function formulier()
 
     $content .= '<form method="post">
         <div class="form-group">
-            <label for="email">First Name:</label>
-            <input type="text" class="form-control" id="email" name="first_name">
+            <label for="email">Voornaam :</label>
+            <input type="text" class="form-control" id="email" name="first_name" maxlength="15" required>
         </div>
         <div class="form-group">
-            <label for="pwd">Last Name :</label>
-            <input type="text" class="form-control" id="pwd" name="last_name">
+            <label for="pwd">Achternaam :</label>
+            <input type="text" class="form-control" id="pwd" name="last_name" maxlength="30" required>
         </div>
 
         <div class="form-group">
             <label for="pwd">Email :</label>
-            <input type="text" class="form-control" id="pwd" name="email">
+            <input type="text" class="form-control" id="pwd" name="email" maxlength="30" required>
         </div>
 
         <div class="form-group">
             <label for="pwd">Mobile No. :</label>
-            <input type="text" class="form-control" name="mobile">
+            <input placeholder="maximaal 15 tekens" type="text" class="form-control" name="mobile" maxlength="15" required>
         </div>
 
         <div class="form-group">
             <label for="pwd">Comment :</label>
-            <textarea class="form-control" name="comment"></textarea>
+            <textarea placeholder="onderwerp vraag of korte omschrijving" class="form-control" name="Vraag" maxlength="50" required></textarea>
         </div>
 
-        <button type="submit" name="BtnSubmit" class="btn btn-default">Submit</button>
+        <button type="submit" name="BtnSubmit" class="btn btn-default">Verzenden</button>
     </form>';
 
     return $content;
